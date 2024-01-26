@@ -1,3 +1,3 @@
-W:/imx8mp/ecspi_polling_b2b_transfer_master/release/CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir
-W:/imx8mp/ecspi_polling_b2b_transfer_master/release/CMakeFiles/edit_cache.dir
-W:/imx8mp/ecspi_polling_b2b_transfer_master/release/CMakeFiles/rebuild_cache.dir
+/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir
+/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles/edit_cache.dir
+/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles/rebuild_cache.dir

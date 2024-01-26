@@ -1,8 +1,8 @@
-# Install script for directory: W:/imx8mp/ecspi_polling_b2b_transfer_master
+# Install script for directory: /home/teleport/WORKSHOP/arm7_adc_imx8mp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/beasa/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "W:/imx8mp/ecspi_polling_b2b_transfer_master/release/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,13 +1,13 @@
 The target system is: Generic -  - arm
-The host system is: Windows - 10.0.19045 - AMD64
+The host system is: Linux - 6.1.0-15-amd64 - x86_64
 Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
-arm-none-eabi-gcc.exe (Arm GNU Toolchain 12.2.Rel1 (Build arm-12.24)) 12.2.1 20221205
+arm-none-eabi-gcc (Arm GNU Toolchain 12.2.Rel1 (Build arm-12.24)) 12.2.1 20221205
 Copyright (C) 2022 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/Users/beasa/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe 
+Compiler: /home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc 
 Build flags: 
 Id flags: -c 
 
@@ -17,10 +17,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
 
-The C compiler identification is GNU, found in "W:/imx8mp/ecspi_polling_b2b_transfer_master/release/CMakeFiles/3.24.2/CompilerIdC/CMakeCCompilerId.o"
+The C compiler identification is GNU, found in "/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles/3.25.1/CompilerIdC/CMakeCCompilerId.o"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/Users/beasa/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-g++.exe 
+Compiler: /home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-g++ 
 Build flags: 
 Id flags: -c 
 
@@ -30,5 +30,5 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
 
-The CXX compiler identification is GNU, found in "W:/imx8mp/ecspi_polling_b2b_transfer_master/release/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.o"
+The CXX compiler identification is GNU, found in "/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles/3.25.1/CompilerIdCXX/CMakeCXXCompilerId.o"
 

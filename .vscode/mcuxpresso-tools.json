@@ -1,6 +1,6 @@
 {
   "version": "1.4",
-  "toolchainPath": "C:\\Users\\beasa\\.mcuxpressotools\\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi",
+  "toolchainPath": "/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi",
   "linkedProjects": [],
   "trustZoneType": "none",
   "multicoreType": "none",

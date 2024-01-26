@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/teleport/WORKSHOP/arm7_adc_imx8mp/startup/startup_MIMX8ML8_cm7.S
+
+/home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_memcpy.S
+

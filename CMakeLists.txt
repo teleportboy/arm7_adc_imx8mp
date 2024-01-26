@@ -53,7 +53,7 @@ add_executable(${MCUX_SDK_PROJECT_NAME}
 "${ProjDirPath}/board/pin_mux.c"
 "${ProjDirPath}/board/pin_mux.h"
 "${ProjDirPath}/remoteproc/empty_rsc_table.c"
-"${ProjDirPath}/source/ecspi_polling_b2b_transfer_master.c"
+"${ProjDirPath}/source/main.c"
 )
 
 target_include_directories(${MCUX_SDK_PROJECT_NAME} PRIVATE

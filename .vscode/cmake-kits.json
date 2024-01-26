@@ -2,10 +2,10 @@
   {
     "name": "ARM GCC",
     "environmentVariables": {
-      "ARMGCC_DIR": "C:\\Users\\beasa\\.mcuxpressotools\\arm-gnu-toolchain-12.2.rel1-mingw-w64-i686-arm-none-eabi"
+      "ARMGCC_DIR": "/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi"
     },
     "cmakeSettings": {},
     "keep": true,
-    "toolchainFile": "w:\\imx8mp\\ecspi_polling_b2b_transfer_master\\armgcc.cmake"
+    "toolchainFile": "/home/teleport/WORKSHOP/arm7_adc_imx8mp/armgcc.cmake"
   }
 ]
