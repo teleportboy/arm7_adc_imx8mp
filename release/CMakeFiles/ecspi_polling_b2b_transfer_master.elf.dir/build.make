@@ -139,10 +139,24 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/main.c.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/main.c.s"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/teleport/WORKSHOP/arm7_adc_imx8mp/source/main.c -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/main.c.s
 
+CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
+CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/source/adc/ads8028.c
+CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj"
+	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/source/adc/ads8028.c
+
+CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.i"
+	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/teleport/WORKSHOP/arm7_adc_imx8mp/source/adc/ads8028.c > CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.i
+
+CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.s"
+	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/teleport/WORKSHOP/arm7_adc_imx8mp/source/adc/ads8028.c -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.s
+
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_iuart.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_iuart.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/component/uart/fsl_adapter_iuart.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_iuart.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_iuart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_iuart.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_iuart.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_iuart.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_iuart.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/component/uart/fsl_adapter_iuart.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_iuart.c.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_component_generic_list.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_component_generic_list.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/component/lists/fsl_component_generic_list.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_component_generic_list.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_component_generic_list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_component_generic_list.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_component_generic_list.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_component_generic_list.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_component_generic_list.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/component/lists/fsl_component_generic_list.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_component_generic_list.c.i: cmake_force
@@ -169,7 +183,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_compone
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/startup/startup_MIMX8ML8_cm7.S.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/startup/startup_MIMX8ML8_cm7.S.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/startup/startup_MIMX8ML8_cm7.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/startup/startup_MIMX8ML8_cm7.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/startup/startup_MIMX8ML8_cm7.S.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/startup/startup_MIMX8ML8_cm7.S.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/startup/startup_MIMX8ML8_cm7.S
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/startup/startup_MIMX8ML8_cm7.S.i: cmake_force
@@ -183,7 +197,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/startup/startup_MIMX8ML8_cm
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/device/system_MIMX8ML8_cm7.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/device/system_MIMX8ML8_cm7.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/device/system_MIMX8ML8_cm7.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/device/system_MIMX8ML8_cm7.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/device/system_MIMX8ML8_cm7.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/device/system_MIMX8ML8_cm7.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/device/system_MIMX8ML8_cm7.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/device/system_MIMX8ML8_cm7.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/device/system_MIMX8ML8_cm7.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/device/system_MIMX8ML8_cm7.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/device/system_MIMX8ML8_cm7.c.i: cmake_force
@@ -197,7 +211,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/device/system_MIMX8ML8_cm7.
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_audiomix.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_audiomix.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_audiomix.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_audiomix.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_audiomix.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_audiomix.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_audiomix.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_audiomix.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_audiomix.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_audiomix.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_audiomix.c.i: cmake_force
@@ -211,7 +225,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_audiomix.c.s: c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_clock.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_clock.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_clock.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_clock.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_clock.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_clock.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_clock.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_clock.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_clock.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_clock.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_clock.c.i: cmake_force
@@ -225,7 +239,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_clock.c.s: cmak
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_common.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_common.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common.c.i: cmake_force
@@ -239,7 +253,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common.c.s: cma
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common_arm.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common_arm.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_common_arm.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common_arm.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common_arm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common_arm.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common_arm.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common_arm.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common_arm.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_common_arm.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common_arm.c.i: cmake_force
@@ -253,7 +267,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_common_arm.c.s:
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_ecspi.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_ecspi.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_ecspi.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_ecspi.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_ecspi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_ecspi.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_ecspi.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_ecspi.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_ecspi.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_ecspi.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_ecspi.c.i: cmake_force
@@ -267,7 +281,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_ecspi.c.s: cmak
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpt.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpt.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_gpt.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpt.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpt.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpt.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpt.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpt.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpt.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_gpt.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpt.c.i: cmake_force
@@ -281,7 +295,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpt.c.s: cmake_
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpio.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpio.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_gpio.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpio.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpio.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpio.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpio.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpio.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_gpio.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpio.c.i: cmake_force
@@ -295,7 +309,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_gpio.c.s: cmake
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_uart.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_uart.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_uart.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_uart.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_uart.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_uart.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_uart.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_uart.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_uart.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_uart.c.i: cmake_force
@@ -309,7 +323,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_uart.c.s: cmake
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_rdc.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_rdc.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_rdc.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_rdc.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_rdc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_rdc.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_rdc.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_rdc.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_rdc.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers/fsl_rdc.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_rdc.c.i: cmake_force
@@ -323,7 +337,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_rdc.c.s: cmake_
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_sbrk.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_sbrk.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_sbrk.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_sbrk.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_sbrk.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_sbrk.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_sbrk.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_sbrk.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_sbrk.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_sbrk.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_sbrk.c.i: cmake_force
@@ -337,7 +351,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_sbrk.c.s: cma
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_syscall_stub.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_syscall_stub.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_syscall_stub.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_syscall_stub.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_syscall_stub.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_syscall_stub.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_syscall_stub.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_syscall_stub.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_syscall_stub.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_syscall_stub.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_syscall_stub.c.i: cmake_force
@@ -350,7 +364,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_syscall_stub.
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_memcpy.S.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_memcpy.S.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_memcpy.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building ASM object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_memcpy.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building ASM object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_memcpy.S.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_memcpy.S.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_memcpy.S
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_memcpy.S.i: cmake_force
@@ -364,7 +378,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_memcpy.S.s: c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_assert.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_assert.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_assert.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_assert.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_assert.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_assert.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_assert.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_assert.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_assert.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_assert.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_assert.c.i: cmake_force
@@ -378,7 +392,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_assert.c.s: c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_str.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_str.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_str.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_str.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_str.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_str.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_str.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_str.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_str.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_str.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_str.c.i: cmake_force
@@ -392,7 +406,7 @@ CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_str.c.s: cmak
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_debug_console.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/flags.make
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_debug_console.c.obj: /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_debug_console.c
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_debug_console.c.obj: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_debug_console.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_debug_console.c.obj"
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_debug_console.c.obj -MF CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_debug_console.c.obj.d -o CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_debug_console.c.obj -c /home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities/fsl_debug_console.c
 
 CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_debug_console.c.i: cmake_force
@@ -410,6 +424,7 @@ ecspi_polling_b2b_transfer_master_elf_OBJECTS = \
 "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/board/pin_mux.c.obj" \
 "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/remoteproc/empty_rsc_table.c.obj" \
 "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/main.c.obj" \
+"CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj" \
 "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_iuart.c.obj" \
 "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_component_generic_list.c.obj" \
 "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/startup/startup_MIMX8ML8_cm7.S.obj" \
@@ -438,6 +453,7 @@ ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_mas
 ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/board/pin_mux.c.obj
 ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/remoteproc/empty_rsc_table.c.obj
 ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/main.c.obj
+ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj
 ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/uart/fsl_adapter_iuart.c.obj
 ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/component/lists/fsl_component_generic_list.c.obj
 ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/startup/startup_MIMX8ML8_cm7.S.obj
@@ -459,7 +475,7 @@ ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_mas
 ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/utilities/fsl_debug_console.c.obj
 ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/build.make
 ecspi_polling_b2b_transfer_master.elf: CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking C executable ecspi_polling_b2b_transfer_master.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/teleport/WORKSHOP/arm7_adc_imx8mp/release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking C executable ecspi_polling_b2b_transfer_master.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/link.txt --verbose=$(VERBOSE)
 	/home/teleport/.mcuxpressotools/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-objcopy -Obinary /home/teleport/WORKSHOP/arm7_adc_imx8mp/release/ecspi_polling_b2b_transfer_master.elf /home/teleport/WORKSHOP/arm7_adc_imx8mp/release/ecspi_polling_b2b_transfer_master.bin
 

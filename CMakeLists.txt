@@ -54,6 +54,8 @@ add_executable(${MCUX_SDK_PROJECT_NAME}
 "${ProjDirPath}/board/pin_mux.h"
 "${ProjDirPath}/remoteproc/empty_rsc_table.c"
 "${ProjDirPath}/source/main.c"
+"${ProjDirPath}/source/adc/ads8028.h"
+"${ProjDirPath}/source/adc/ads8028.c"
 )
 
 target_include_directories(${MCUX_SDK_PROJECT_NAME} PRIVATE

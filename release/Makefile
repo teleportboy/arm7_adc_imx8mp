@@ -513,6 +513,30 @@ remoteproc/empty_rsc_table.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/build.make CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/remoteproc/empty_rsc_table.c.s
 .PHONY : remoteproc/empty_rsc_table.c.s
 
+source/adc/ads8028.obj: source/adc/ads8028.c.obj
+.PHONY : source/adc/ads8028.obj
+
+# target to build an object file
+source/adc/ads8028.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/build.make CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj
+.PHONY : source/adc/ads8028.c.obj
+
+source/adc/ads8028.i: source/adc/ads8028.c.i
+.PHONY : source/adc/ads8028.i
+
+# target to preprocess a source file
+source/adc/ads8028.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/build.make CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.i
+.PHONY : source/adc/ads8028.c.i
+
+source/adc/ads8028.s: source/adc/ads8028.c.s
+.PHONY : source/adc/ads8028.s
+
+# target to generate assembly for a file
+source/adc/ads8028.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/build.make CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.s
+.PHONY : source/adc/ads8028.c.s
+
 source/main.obj: source/main.c.obj
 .PHONY : source/main.obj
 
@@ -730,6 +754,9 @@ help:
 	@echo "... remoteproc/empty_rsc_table.obj"
 	@echo "... remoteproc/empty_rsc_table.i"
 	@echo "... remoteproc/empty_rsc_table.s"
+	@echo "... source/adc/ads8028.obj"
+	@echo "... source/adc/ads8028.i"
+	@echo "... source/adc/ads8028.s"
 	@echo "... source/main.obj"
 	@echo "... source/main.i"
 	@echo "... source/main.s"

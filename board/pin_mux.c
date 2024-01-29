@@ -167,6 +167,27 @@ void pinctrl_adc(void) {                                   /*!< Function assigne
     IOMUXC_SetPinConfig(IOMUXC_SD2_CD_B_GPIO2_IO12, 
                         IOMUXC_SW_PAD_CTL_PAD_DSE(2U) |
                         IOMUXC_SW_PAD_CTL_PAD_HYS_MASK);
+
+
+    IOMUXC_SetPinMux(IOMUXC_SAI1_MCLK_GPIO4_IO20, 0U);
+    IOMUXC_SetPinConfig(IOMUXC_SAI1_MCLK_GPIO4_IO20,
+                        IOMUXC_SW_PAD_CTL_PAD_DSE(2U) |
+                        IOMUXC_SW_PAD_CTL_PAD_HYS_MASK);
+
+    IOMUXC_SetPinMux(IOMUXC_SAI1_TXD0_GPIO4_IO12, 0U);
+    IOMUXC_SetPinConfig(IOMUXC_SAI1_TXD0_GPIO4_IO12,
+                        IOMUXC_SW_PAD_CTL_PAD_DSE(2U) |
+                        IOMUXC_SW_PAD_CTL_PAD_HYS_MASK);
+
+    IOMUXC_SetPinMux(IOMUXC_SAI1_TXD7_GPIO4_IO19, 0U);
+    IOMUXC_SetPinConfig(IOMUXC_SAI1_TXD7_GPIO4_IO19,
+                        IOMUXC_SW_PAD_CTL_PAD_DSE(2U) |
+                        IOMUXC_SW_PAD_CTL_PAD_HYS_MASK);
+
+    IOMUXC_SetPinMux(IOMUXC_SAI2_RXFS_GPIO4_IO21, 0U);
+    IOMUXC_SetPinConfig(IOMUXC_SAI2_RXFS_GPIO4_IO21,
+                        IOMUXC_SW_PAD_CTL_PAD_DSE(2U) |
+                        IOMUXC_SW_PAD_CTL_PAD_HYS_MASK);
 }
 
 

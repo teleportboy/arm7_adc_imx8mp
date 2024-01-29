@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/drivers/fsl_uart.c.obj.d"
   "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/remoteproc/empty_rsc_table.c.obj"
   "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/remoteproc/empty_rsc_table.c.obj.d"
+  "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj"
+  "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/adc/ads8028.c.obj.d"
   "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/main.c.obj"
   "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/source/main.c.obj.d"
   "CMakeFiles/ecspi_polling_b2b_transfer_master.elf.dir/startup/startup_MIMX8ML8_cm7.S.obj"

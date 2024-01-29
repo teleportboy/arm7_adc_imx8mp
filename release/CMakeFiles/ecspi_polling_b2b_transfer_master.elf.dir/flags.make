@@ -13,5 +13,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/teleport/WORKSHOP/arm7_adc_imx8mp/board -I/home/teleport/WORKSHOP/arm7_adc_imx8mp/evkmimx8mp/driver_examples/ecspi/polling_b2b_transfer/master -I/home/teleport/WORKSHOP/arm7_adc_imx8mp/CMSIS -I/home/teleport/WORKSHOP/arm7_adc_imx8mp/component/uart -I/home/teleport/WORKSHOP/arm7_adc_imx8mp/component/lists -I/home/teleport/WORKSHOP/arm7_adc_imx8mp/device -I/home/teleport/WORKSHOP/arm7_adc_imx8mp/drivers -I/home/teleport/WORKSHOP/arm7_adc_imx8mp/utilities
 
-C_FLAGS =       -O3  -O3  -O3  -O3  -O3      -DNDEBUG     -DCPU_MIMX8ML8DVNLZ     -DCPU_MIMX8ML8DVNLZ_cm7     -DMCUXPRESSO_SDK     -Os     -mcpu=cortex-m7     -Wall     -Wno-address-of-packed-member     -mthumb     -MMD     -MP     -fno-common     -ffunction-sections     -fdata-sections     -ffreestanding     -fno-builtin     -mapcs     -std=gnu99     -mfloat-abi=hard -mfpu=fpv5-sp-d16     -DSDK_DEBUGCONSOLE=1 
+C_FLAGS =       -O3  -O3  -O3  -O3  -O3  -O3  -O3      -DNDEBUG     -DCPU_MIMX8ML8DVNLZ     -DCPU_MIMX8ML8DVNLZ_cm7     -DMCUXPRESSO_SDK     -Os     -mcpu=cortex-m7     -Wall     -Wno-address-of-packed-member     -mthumb     -MMD     -MP     -fno-common     -ffunction-sections     -fdata-sections     -ffreestanding     -fno-builtin     -mapcs     -std=gnu99     -mfloat-abi=hard -mfpu=fpv5-sp-d16     -DSDK_DEBUGCONSOLE=1 
 

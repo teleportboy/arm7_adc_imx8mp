@@ -14,45 +14,41 @@
 #include "board.h"
 #include "fsl_gpio.h"
 #include "fsl_gpt.h"
+#include "./adc/ads8028.h"
 
 #define ECSPI_MASTER_CLK_FREQ                                                                 \
     (CLOCK_GetPllFreq(kCLOCK_SystemPll1Ctrl) / (CLOCK_GetRootPreDivider(kCLOCK_RootEcspi2)) / \
      (CLOCK_GetRootPostDivider(kCLOCK_RootEcspi2)))
 
-#define TRANSFER_BAUDRATE 500000U
+#define TRANSFER_BAUDRATE 5000000U
 #define SYS_INCREMENTATOR_SPEED 2000000U
 
 #define CHANNELS_COUNT 8
 
-void writeDataToSharedMemory(uint32_t *data);
-void writeDataToMemory(uint32_t *addr, uint32_t data);
+typedef struct shared_data {
+    uint32_t counter;
+    uint32_t adcCount;
+    uint32_t timer;
+    uint32_t dig;
+    uint32_t rot;
+    uint32_t depa;
+    uint32_t depb;
+    uint32_t adcValues[CHANNELS_COUNT];
+} shared_data;
 
+
+void writeDataToMemory(uint32_t *addr, uint32_t data);
+void writeToSharedMemoryFrom(char *startByte, uint32_t size);
 
 void start2MHzTimer();
 void setupECSPI2();
-uint32_t createADCReadCommand(uint32_t channel);
-uint32_t readADCbyChannel(uint32_t channel);
-uint32_t* readAllChannels(uint32_t channelsCount, uint32_t *adcChannelValues);
-
-void writeDataToMemory(uint32_t *addr, uint32_t data)
-{
-    *addr = data;
-}
-
-void writeDataToSharedMemory(uint32_t *data)
-{
-    uint32_t *sharedMemoryPtr = (uint32_t*)0x80000000;
-    memcpy(sharedMemoryPtr, data, 4);
-}
-
-void writeToSharedMemoryFrom(char *startByte, uint32_t size)
-{
-    char *sharedMemoryPtr = (char*)0x80000000;
-    memcpy(sharedMemoryPtr, startByte, size);
-}
+void setupDigitalInputs();
 
 void setupECSPI2()
 {
+    CLOCK_SetRootMux(kCLOCK_RootEcspi2, kCLOCK_EcspiRootmuxSysPll1);
+    CLOCK_SetRootDivider(kCLOCK_RootEcspi2, 8U, 20U); //20mhz
+
     ecspi_master_config_t masterConfig;
     ECSPI_MasterGetDefaultConfig(&masterConfig);
     masterConfig.channelConfig.phase    = kECSPI_ClockPhaseFirstEdge;
@@ -64,20 +60,46 @@ void setupECSPI2()
 
     masterConfig.burstLength = 16;
    
-    masterConfig.txFifoThreshold = 1;
-    masterConfig.rxFifoThreshold = 0;
+    masterConfig.txFifoThreshold = 0;
+    masterConfig.rxFifoThreshold = 1;
+
+    masterConfig.chipSelectDelay = 16;
+
+    //masterConfig.baudRate_Bps = TRANSFER_BAUDRATE;
     
     gpio_pin_config_t pdrstConfig = { kGPIO_DigitalOutput, 0, kGPIO_NoIntmode };
-    GPIO_PinInit(GPIO2, 12U, &pdrstConfig);
-    GPIO_PinWrite(GPIO2, 12U, 1U);
+    GPIO_PinInit(GPIO2, 12, &pdrstConfig);
+    GPIO_PinWrite(GPIO2, 12, 1);
 
     ECSPI_MasterInit(ECSPI2, &masterConfig, ECSPI_MASTER_CLK_FREQ);
     ECSPI2->CONFIGREG |= ECSPI_CONFIGREG_SS_CTL(1); //DONT TOUCH!
+}
 
+void setupDigitalInputs()
+{
+    gpio_pin_config_t dig = { kGPIO_DigitalOutput, 0, kGPIO_NoIntmode };
+    GPIO_PinInit(GPIO4, 12, &dig);
+    //GPIO_PinWrite(GPIO4, 12, 1);
+
+    gpio_pin_config_t rot = { kGPIO_DigitalInput, 0, kGPIO_NoIntmode };
+    GPIO_PinInit(GPIO4, 19, &rot);
+    //GPIO_PinWrite(GPIO4, 19, 1);
+
+    gpio_pin_config_t depa = { kGPIO_DigitalOutput, 0, kGPIO_NoIntmode };
+    GPIO_PinInit(GPIO4, 20, &depa);
+    //GPIO_PinWrite(GPIO4, 20, 1);
+
+    gpio_pin_config_t depb = { kGPIO_DigitalInput, 0, kGPIO_NoIntmode };
+    GPIO_PinInit(GPIO4, 21, &depb);
+    //GPIO_PinWrite(GPIO4, 21, 1);
 }
 
 void start2MHzTimer()
 {
+    
+    CLOCK_SetRootMux(kCLOCK_RootGpt1, kCLOCK_GptRootmuxSysPll1Div20);
+    CLOCK_SetRootDivider(kCLOCK_RootGpt1, 4U, 5U); //2mhz
+
     gpt_config_t gptConfig;
 
     GPT_GetDefaultConfig(&gptConfig);
@@ -86,87 +108,41 @@ void start2MHzTimer()
     gptConfig.enableFreeRun = true;
 
     GPT_Init(GPT1, &gptConfig);
-
-    GPT_SetClockDivider(GPT1, 50);
+    
+    // GPT_SetClockDivider(GPT1, 50); // 100 / 50 = 2mhz
 
     GPT_StartTimer(GPT1);
 }
 
-uint32_t createADCReadCommand(uint32_t channel) 
-{
-    uint32_t commandReadADC = 1 << 15;
-    commandReadADC |= 1 << (13 - channel);
-    return (commandReadADC << 16) | commandReadADC;
-}
-
-uint32_t readADCbyChannel(uint32_t channel)
-{
-    ecspi_transfer_t masterXfer;
-
-    uint32_t command = createADCReadCommand(channel);
-    uint32_t rxData = 0;
-
-    masterXfer.txData   = &command;
-    masterXfer.rxData   = &rxData;
-    masterXfer.dataSize = 1;
-    masterXfer.channel  = kECSPI_Channel0;
-
-    ECSPI_MasterTransferBlocking(ECSPI2, &masterXfer);
-
-    return rxData;
-}
-
-uint32_t* readAllChannels(uint32_t channelsCount, uint32_t *adcChannelValues) 
-{
-    uint32_t i = 0;
-    for(; i < channelsCount - 2; i++) {
-        adcChannelValues[i] = readADCbyChannel(i);
-    }
-    for(; i < channelsCount; i++) {
-        adcChannelValues[i] = readADCbyChannel(0);
-    }
-    return adcChannelValues;
-}
-
 int main(void)
 {
-    /* M7 has its local cache and enabled by default,
-     * need to set smart subsystems (0x28000000 ~ 0x3FFFFFFF)
-     * non-cacheable before accessing this address region */
     BOARD_InitMemory();
-
-    /* Board specific RDC settings */
     BOARD_RdcInit();
 
     BOARD_InitBootPins();
     BOARD_BootClockRUN();
-    BOARD_InitDebugConsole();
-
-    CLOCK_SetRootMux(kCLOCK_RootEcspi2, kCLOCK_EcspiRootmuxSysPll1); /* Set ECSPI2 source to SYSTEM PLL1 800MHZ */
-    //CLOCK_SetRootDivider(kCLOCK_RootEcspi2, 10U, 4U);                 /* Set root clock to 800MHZ / 10 = 80MHZ */ 
-
-
-    CLOCK_SetRootMux(kCLOCK_RootGpt1, kCLOCK_GptRootmuxSysPll1Div2); /* Set GPT1 source to SYSTEM PLL1 DIV2 400MHZ */
-    CLOCK_SetRootDivider(kCLOCK_RootGpt1, 1U, 4U);                   /* Set root clock to 400MHZ / 4 = 100MHZ */
+    BOARD_InitDebugConsole();                
 
     start2MHzTimer();
-
     setupECSPI2();
+    setupDigitalInputs();
 
     uint8_t nullizator[128] = {0};    
     writeToSharedMemoryFrom((char*)nullizator, sizeof(nullizator));
 
-
-    while(1) {
-        uint32_t adcValues[CHANNELS_COUNT + 2] = {0};
-        readAllChannels(CHANNELS_COUNT + 2, adcValues);
-        //writeToSharedMemoryFrom(adcValues + 2, CHANNELS_COUNT * sizeof(adcValues[0]));
-
-        // uint32_t adcValue = readADCbyChannel(6);
-        // writeDataToMemory(0x80000000, adcValue);
+    shared_data *data = (shared_data*)0x80000000;
+    while(1) {      
+        data->counter++;  
+        data->timer = GPT_GetCurrentTimerCount(GPT1);
         
-        uint32_t counter = GPT_GetCurrentTimerCount(GPT1);
-        writeDataToMemory(0x80000000, counter);
+        data->dig = GPIO_PinRead(GPIO4, 12);
+        data->rot = GPIO_PinRead(GPIO4, 19);
+        data->depa = GPIO_PinRead(GPIO4, 20);
+        data->depb = GPIO_PinRead(GPIO4, 21);
+
+        if(readAllChannels(CHANNELS_COUNT, data->adcValues)) {
+            data->adcCount++;
+        }
     }
 
     return 0;
